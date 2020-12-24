@@ -1,0 +1,13 @@
+[Unit]
+    Description=Skudo Dashboard
+    After=network.target
+[Service]
+    ExecStart=/usr/bin/python3   /home/pi/esa-poc/mission-gui/mqtt-aprs-infl.py
+    WorkingDirectory=/home/pi
+    StandardOutput=syslog
+    StandardError=syslog
+    SyslogIdentifier=alarm
+    User=root
+
+[Install]
+    WantedBy=multi-user.target

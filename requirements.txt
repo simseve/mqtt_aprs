@@ -1,0 +1,6 @@
+aprslib==0.6.47
+configparser==5.0.1
+paho-mqtt==1.5.1
+setproctitle==1.2.1
+DateTime~=4.3
+influxdb~=5.3.1
